@@ -36,11 +36,9 @@
         if (end % 1 != 0) {
           let obj = document.getElementById(id);
           let current = start;
-          console.log(current);
-          console.log(+end);
           let range = +end - start;
           let increment = +end > start ? 0.1 : -0.1;
-          let step = duration / range;
+          let step = duration / (range * 10);
           let timer = setInterval(() => {
               current += increment;
               obj.textContent = current.toFixed(1);
@@ -64,10 +62,17 @@
             }, step);
         }
       }
-      counter("number1", 0, document.getElementById('number1').textContent, 4000);
-      counter("number2", 0, document.getElementById('number2').textContent, 4000);
-      counter("number3", 0.1, document.getElementById('number3').textContent, 400);
-      counter("number4", 0, document.getElementById('number4').textContent, 300);
+      let numberValue = document.querySelectorAll('.number-value');
+        for (let i = 0; i < numberValue.length; i++){
+            let fixed = 0;
+            if (numberValue[i] % 1 == 0) {
+              fixed = 0.1;
+            }
+            else {
+              fixed = 0;
+            }
+            counter(numberValue[i].id, fixed, numberValue[i].textContent, 4000);
+        }
       document.removeEventListener('scroll', increaseNum);
     }
   }

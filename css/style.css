@@ -90,7 +90,8 @@ header .header-inner {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 22px 0;
+  padding: 29px 0;
+  margin-left: -2px;
 }
 
 .header-logo {
@@ -161,8 +162,8 @@ header .header-inner {
   background-image: url("../images/main-bg.jpg");
   background-size: cover;
   background-position: top center;
-  margin-top: -84px;
-  padding-top: 84px;
+  margin-top: -98px;
+  padding-top: 98px;
   min-height: 952px;
   background-repeat: no-repeat;
   color: #fff;
@@ -172,7 +173,7 @@ header .header-inner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 64px;
+  gap: 63px;
 }
 
 .main-section-text {
@@ -183,7 +184,7 @@ header .header-inner {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-top: 151.9px;
+  margin-top: 153px;
   padding-bottom: 20px;
 }
 
@@ -194,16 +195,17 @@ header .header-inner {
   line-height: 98.4px;
   max-width: 534px;
   width: 100%;
-  margin-bottom: 32px;
+  margin-bottom: 31px;
 }
 
 .main-section-desc {
   font-family: 'Poppins', sans-serif;
-  max-width: 612px;
+  max-width: 615px;
   width: 100%;
   font-size: 18px;
   line-height: 30px;
-  margin-bottom: 48px;
+  margin-bottom: 45px;
+  margin-left: 2px;
 }
 
 .main-section-btns {
@@ -222,7 +224,7 @@ header .header-inner {
   line-height: 29px;
   font-weight: 500;
   color: #FF4363;
-  padding: 18px 20px 19px;
+  padding: 18px 21px 19px;
   border-radius: 50px;
   background: #fff;
   border: 2px solid #fff;
@@ -258,8 +260,8 @@ header .header-inner {
 }
 
 .main-section-img {
-  margin-right: -162px;
-  margin-top: 60px;
+  margin-right: -165px;
+  margin-top: 46px;
 }
 
 .main-section-img img {
@@ -271,14 +273,18 @@ header .header-inner {
 
 .advans {
   margin-top: 120px;
-  margin-bottom: 120px;
+  margin-bottom: 108px;
 }
 
 .advans-inner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 29px;
+  margin-left: 1px;
+  margin-right: 1px;
 }
 
 .advan-block {
@@ -286,8 +292,8 @@ header .header-inner {
   -webkit-box-shadow: 0px 0px 59px #00000015;
           box-shadow: 0px 0px 59px #00000015;
   border-radius: 10px;
-  width: 100%;
-  padding: 70px 48px 32px;
+  width: calc(33.333333% - 19.333333px);
+  padding: 70px 47.9px 32px 48.1px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -301,11 +307,17 @@ header .header-inner {
 }
 
 .advan-block:first-child .advan-icon {
-  padding-top: 2px;
+  padding-left: 2px;
+  padding-bottom: 5px;
 }
 
 .advan-block:nth-child(2) .advan-icon {
-  padding-left: 2px;
+  padding-left: 1px;
+  padding-bottom: 2px;
+}
+
+.advan-block:nth-child(2) .advan-icon img {
+  width: 37px;
 }
 
 .advan-icon {
@@ -322,15 +334,16 @@ header .header-inner {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 23px;
+  margin-bottom: 14px;
 }
 
 .advan-title {
   font-family: 'Poppins', sans-serif;
   font-size: 24px;
   font-weight: 600;
-  line-height: 48px;
+  line-height: 50px;
   text-align: center;
+  padding-left: 1px;
 }
 
 .advan-desc {
@@ -343,7 +356,7 @@ header .header-inner {
 }
 
 .app {
-  margin-top: 120px;
+  margin-top: 108px;
   margin-bottom: 80px;
   color: #222222;
 }
@@ -355,7 +368,7 @@ header .header-inner {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 66px;
+  gap: 69px;
 }
 
 .app-img {
@@ -381,6 +394,7 @@ header .header-inner {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  margin-right: -7px;
 }
 
 .app-icon {
@@ -397,14 +411,15 @@ header .header-inner {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 29px;
+  margin-bottom: 30px;
+  margin-left: 3px;
 }
 
 .app-title {
   font-size: 60px;
   font-weight: 700;
   line-height: 72px;
-  margin-bottom: 32px;
+  margin-bottom: 30px;
 }
 
 .app-desc {
@@ -412,11 +427,11 @@ header .header-inner {
   font-size: 18px;
   line-height: 30px;
   color: #666666;
-  margin-bottom: 37px;
+  margin-bottom: 23px;
 }
 
 .app-list {
-  margin-bottom: 51px;
+  margin-bottom: 40px;
 }
 
 .app-list li {
@@ -444,7 +459,7 @@ header .header-inner {
 
 .app-btn {
   background: #FF4363;
-  padding: 18px 37px 19px;
+  padding: 20px 37px 23px;
   border: 2px solid #FF4363;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -479,6 +494,10 @@ header .header-inner {
           align-items: flex-start;
 }
 
+.faq-content {
+  margin-left: -2px;
+}
+
 .faq-icon {
   width: 120px;
   height: 120px;
@@ -494,17 +513,19 @@ header .header-inner {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 29px;
+  margin-left: 2px;
 }
 
 .faq-icon img {
-  margin-top: -20px;
+  margin-top: -3px;
+  margin-left: 3px;
 }
 
 .faq-title {
   font-size: 60px;
   line-height: 72px;
   font-weight: 700;
-  margin-bottom: 32px;
+  margin-bottom: 30px;
 }
 
 .faq-desc {
@@ -513,6 +534,7 @@ header .header-inner {
   color: #666666;
   line-height: 30px;
   margin-bottom: 43px;
+  margin-left: 1px;
 }
 
 .faq-questions {
@@ -523,7 +545,7 @@ header .header-inner {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 32px;
+  gap: 34px;
 }
 
 .faq-question-block {
@@ -534,7 +556,7 @@ header .header-inner {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 14px;
+  gap: 12px;
 }
 
 .faq-question {
@@ -569,6 +591,7 @@ header .header-inner {
   -webkit-transition: all 0.3s linear;
   -o-transition: all 0.3s linear;
   transition: all 0.3s linear;
+  margin-left: 1px;
 }
 
 .faq-img {
@@ -586,7 +609,7 @@ header .header-inner {
 
 .numbers {
   margin-top: 72px;
-  margin-bottom: 98px;
+  margin-bottom: 99px;
 }
 
 .numbers-inner {
@@ -594,7 +617,7 @@ header .header-inner {
   border-radius: 10px;
   margin-left: -1px;
   margin-right: -1px;
-  padding: 90px 100px 99px;
+  padding: 103px 100px 87px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -611,10 +634,18 @@ header .header-inner {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 20px;
+  gap: 14px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.number:nth-child(2) {
+  margin-left: -38px;
+}
+
+.number:nth-child(3) {
+  margin-right: -29px;
 }
 
 .numbers-inner-number {
@@ -633,8 +664,8 @@ header .header-inner {
 }
 
 .contacts {
-  margin-top: 98px;
-  margin-bottom: 110px;
+  margin-top: 99px;
+  margin-bottom: 111px;
   color: #222222;
 }
 
@@ -658,7 +689,7 @@ header .header-inner {
   font-size: 60px;
   font-weight: 700;
   line-height: 72px;
-  margin-bottom: 32px;
+  margin-bottom: 30px;
 }
 
 .contacts-desc {
@@ -667,12 +698,12 @@ header .header-inner {
   line-height: 30px;
   text-align: center;
   color: #666666;
-  margin-bottom: 31px;
+  margin-bottom: 27px;
 }
 
 .contacts-btn {
   background: #FF4363;
-  padding: 18px 37px 19px;
+  padding: 22px 38px 23px;
   border: 2px solid #FF4363;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -693,7 +724,7 @@ header .header-inner {
 
 footer {
   background: #000000;
-  padding-top: 29px;
+  padding-top: 31.5px;
   padding-bottom: 28px;
   color: #fff;
 }
@@ -717,14 +748,15 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 95px;
+  gap: 96px;
 }
 
 .footer-socials {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 8px;
+  gap: 9.2px;
+  margin-left: -1px;
 }
 
 .footer-socials a {
@@ -738,7 +770,7 @@ footer {
   font-size: 30px;
   line-height: 36px;
   font-weight: 900;
-  letter-spacing: 4.5px;
+  letter-spacing: 5.8px;
   color: #fff;
 }
 
@@ -747,6 +779,7 @@ footer {
   font-size: 18px;
   font-weight: 500;
   line-height: 21.5px;
+  margin-top: -1px;
 }
 
 @media (min-width: 1601px) {
@@ -869,6 +902,9 @@ footer {
   }
   .advans-inner {
     gap: 25px;
+  }
+  .advan-block {
+    width: 100%;
   }
   .app-inner {
     -webkit-box-orient: vertical;
@@ -1003,6 +1039,12 @@ footer {
         -ms-flex-direction: column;
             flex-direction: column;
     gap: 35px;
+  }
+  .number:nth-child(2) {
+    margin-left: 0;
+  }
+  .number:nth-child(3) {
+    margin-right: 0;
   }
 }
 
